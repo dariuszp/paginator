@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Dariuszp\Paginator\Data\Page" namespace="Dariuszp\Paginator\Data" name="Page" abstract="false" final="false" start="6" end="77">
+  <file path="/home/dariuszp/php/paginator/src/Data" file="Page.php" realpath="/home/dariuszp/php/paginator/src/Data/Page.php" size="1216" time="2018-04-08T21:53:46+00:00" unixtime="1523224426" sha1="5881a0ae605ad0f2fd181679826b58832530f32f" relative="Data/Page.php"/>
+  <implements full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+  <member name="url" default="'/'" type="string" visibility="private" static="false" line="8"/>
+  <member name="label" default="'1'" type="string" visibility="private" static="false" line="10"/>
+  <member name="current" default="false" type="boolean" visibility="private" static="false" line="12"/>
+  <constructor name="__construct" start="20" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Page constructor."/>
+      <param type="string" variable="$url"/>
+      <param type="string" variable="$label"/>
+      <param type="object" variable="$current">
+        <type full="Dariuszp\Paginator\Data\bool" namespace="Dariuszp\Paginator\Data" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="url" byreference="false" type="string"/>
+    <parameter name="label" byreference="false" type="string"/>
+    <parameter name="current" byreference="false" type="bool"/>
+  </constructor>
+  <method name="getUrl" start="30" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="setUrl" start="38" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$url"/>
+    </docblock>
+    <parameter name="url" byreference="false" type="string"/>
+  </method>
+  <method name="getLabel" start="46" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="setLabel" start="54" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$label"/>
+    </docblock>
+    <parameter name="label" byreference="false" type="string"/>
+  </method>
+  <method name="isCurrent" start="62" end="65" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Dariuszp\Paginator\Data\bool" namespace="Dariuszp\Paginator\Data" name="bool"/>
+      </return>
+    </docblock>
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="setCurrent" start="70" end="73" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$current">
+        <type full="Dariuszp\Paginator\Data\bool" namespace="Dariuszp\Paginator\Data" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="current" byreference="false" type="bool"/>
+  </method>
+  <interface full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface">
+    <method name="getUrl" start="11" end="11" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="string"/>
+      </docblock>
+      <return type="string" nullable="false"/>
+    </method>
+    <method name="setUrl" start="16" end="16" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param type="string" variable="$url"/>
+      </docblock>
+      <parameter name="url" byreference="false" type="string"/>
+    </method>
+    <method name="getLabel" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="string"/>
+      </docblock>
+      <return type="string" nullable="false"/>
+    </method>
+    <method name="setLabel" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param type="string" variable="$label"/>
+      </docblock>
+      <parameter name="label" byreference="false" type="string"/>
+    </method>
+    <method name="isCurrent" start="31" end="31" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="object">
+          <type full="Dariuszp\Paginator\Data\bool" namespace="Dariuszp\Paginator\Data" name="bool"/>
+        </return>
+      </docblock>
+      <return type="bool" nullable="false"/>
+    </method>
+    <method name="setCurrent" start="36" end="36" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param type="object" variable="$current">
+          <type full="Dariuszp\Paginator\Data\bool" namespace="Dariuszp\Paginator\Data" name="bool"/>
+        </param>
+      </docblock>
+      <parameter name="current" byreference="false" type="bool"/>
+    </method>
+  </interface>
+</class>

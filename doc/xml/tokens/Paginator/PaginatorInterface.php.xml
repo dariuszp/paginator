@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/home/dariuszp/php/paginator/src/Paginator" file="PaginatorInterface.php" realpath="/home/dariuszp/php/paginator/src/Paginator/PaginatorInterface.php" size="338" time="2018-04-08T23:27:35+00:00" unixtime="1523230055" sha1="f06a1c171df934e7849217c5043fac44aefc872a" relative="Paginator/PaginatorInterface.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT"> * Created by PhpStorm.</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * User: dariuszp</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * Date: 09.04.18</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * Time: 01:27</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Dariuszp</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Paginator</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Paginator</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="10"/>
+  <line no="11">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Dariuszp</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Paginator</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Data</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">DataInterface</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12"/>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * Class Simple - generates data object</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * @package Dariuszp\Paginator\Data</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="18">
+    <token name="T_INTERFACE">interface</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">PaginatorInterface</token>
+  </line>
+  <line no="19">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="20">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">getData</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">DataInterface</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="21">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+</source>

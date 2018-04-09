@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Dariuszp\Paginator\Paginator\Simple" namespace="Dariuszp\Paginator\Paginator" name="Simple" abstract="false" final="false" start="14" end="343">
+  <file path="/home/dariuszp/php/paginator/src/Paginator" file="Simple.php" realpath="/home/dariuszp/php/paginator/src/Paginator/Simple.php" size="7952" time="2018-04-08T23:43:49+00:00" unixtime="1523231029" sha1="d0c824705f01fd95261cad564136262c570f24d3" relative="Paginator/Simple.php"/>
+  <docblock>
+    <description compact="Class Simple - generates data object"/>
+    <package value="Dariuszp\Paginator\Data"/>
+  </docblock>
+  <implements full="Dariuszp\Paginator\Paginator\PaginatorInterface" namespace="Dariuszp\Paginator\Paginator" name="PaginatorInterface"/>
+  <constant type="string" name="PAGE_PARAMETER" value="'{page}'"/>
+  <constant type="string" name="ON_PAGE_PARAMETER" value="'{onPage}'"/>
+  <member name="pattern" visibility="private" static="false" line="24">
+    <docblock>
+      <description compact="Url pattern for pagination, require {page} and optional {onPage} parameters"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="totalAmount" default="0" type="integer" visibility="private" static="false" line="30">
+    <docblock>
+      <description compact="Total amount of items to paginate"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="paginationRange" default="2" type="integer" visibility="private" static="false" line="36">
+    <docblock>
+      <description compact="Amount of links on the left and on the right of the current page"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="page" default="1" type="integer" visibility="private" static="false" line="42">
+    <docblock>
+      <description compact="Current page number, cannot go below 1"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="onPage" default="10" type="integer" visibility="private" static="false" line="48">
+    <docblock>
+      <description compact="Amount of items on page"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="firstPage" default="true" type="boolean" visibility="private" static="false" line="54">
+    <docblock>
+      <description compact="Show first page link"/>
+      <var type="object">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="lastPage" default="true" type="boolean" visibility="private" static="false" line="60">
+    <docblock>
+      <description compact="Show last page link"/>
+      <var type="object">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="previousPage" default="true" type="boolean" visibility="private" static="false" line="66">
+    <docblock>
+      <description compact="Show previous page link"/>
+      <var type="object">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="nextPage" default="true" type="boolean" visibility="private" static="false" line="72">
+    <docblock>
+      <description compact="Show next page link"/>
+      <var type="object">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="86" end="97" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Simple constructor."/>
+      <param type="string" variable="$pattern"/>
+      <param type="int" variable="$totalAmount"/>
+      <param type="int" variable="$page"/>
+      <param type="int" variable="$onPage"/>
+      <param type="int" variable="$paginationRange"/>
+      <param type="object" variable="$previousPage">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </param>
+      <param type="object" variable="$nextPage">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </param>
+      <param type="object" variable="$firstPage">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </param>
+      <param type="object" variable="$lastPage">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="pattern" byreference="false" type="string"/>
+    <parameter name="totalAmount" byreference="false" type="integer" default="0"/>
+    <parameter name="page" byreference="false" type="integer" default="1"/>
+    <parameter name="onPage" byreference="false" type="integer" default="10"/>
+    <parameter name="paginationRange" byreference="false" type="integer" default="2"/>
+    <parameter name="previousPage" byreference="false" type="boolean" default="true"/>
+    <parameter name="nextPage" byreference="false" type="boolean" default="true"/>
+    <parameter name="firstPage" byreference="false" type="boolean" default="true"/>
+    <parameter name="lastPage" byreference="false" type="boolean" default="true"/>
+  </constructor>
+  <method name="getPattern" start="103" end="106" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="setPattern" start="111" end="117" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$pattern"/>
+    </docblock>
+    <parameter name="pattern" byreference="false" type="string"/>
+  </method>
+  <method name="getTotalAmount" start="122" end="125" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="int"/>
+    </docblock>
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="setTotalAmount" start="130" end="133" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="int" variable="$totalAmount"/>
+    </docblock>
+    <parameter name="totalAmount" byreference="false" type="int"/>
+  </method>
+  <method name="getPaginationRange" start="138" end="141" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="int"/>
+    </docblock>
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="setPaginationRange" start="146" end="152" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="int" variable="$paginationRange"/>
+    </docblock>
+    <parameter name="paginationRange" byreference="false" type="int"/>
+  </method>
+  <method name="getPage" start="157" end="160" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="int"/>
+    </docblock>
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="setPage" start="165" end="171" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="int" variable="$page"/>
+    </docblock>
+    <parameter name="page" byreference="false" type="int"/>
+  </method>
+  <method name="getOnPage" start="176" end="179" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="int"/>
+    </docblock>
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="setOnPage" start="184" end="190" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="int" variable="$onPage"/>
+    </docblock>
+    <parameter name="onPage" byreference="false" type="int"/>
+  </method>
+  <method name="isFirstPage" start="195" end="198" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </return>
+    </docblock>
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="setFirstPage" start="203" end="206" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$firstPage">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="firstPage" byreference="false" type="bool"/>
+  </method>
+  <method name="isLastPage" start="211" end="214" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </return>
+    </docblock>
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="setLastPage" start="219" end="222" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$lastPage">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="lastPage" byreference="false" type="bool"/>
+  </method>
+  <method name="isPreviousPage" start="227" end="230" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </return>
+    </docblock>
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="setPreviousPage" start="235" end="238" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$previousPage">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="previousPage" byreference="false" type="bool"/>
+  </method>
+  <method name="isNextPage" start="243" end="246" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </return>
+    </docblock>
+    <return type="bool" nullable="false"/>
+  </method>
+  <method name="setNextPage" start="251" end="254" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$nextPage">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="nextPage" byreference="false" type="bool"/>
+  </method>
+  <method name="getData" start="256" end="298" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="false">
+      <type full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface"/>
+    </return>
+    <inline>
+      <comment value="Generate previous page" line="262"/>
+      <comment value="Generate next page" line="269"/>
+      <comment value="Generate first page" line="276"/>
+      <comment value="Generate last page" line="282"/>
+    </inline>
+  </method>
+  <method name="createPage" start="305" end="307" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param type="int" variable="$number"/>
+      <param type="object" variable="$current">
+        <type full="Dariuszp\Paginator\Paginator\bool" namespace="Dariuszp\Paginator\Paginator" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+    </return>
+    <parameter name="number" byreference="false" type="integer" default="1"/>
+    <parameter name="current" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="createUrl" start="309" end="319" abstract="false" final="false" static="false" visibility="private">
+    <return type="string" nullable="false"/>
+    <parameter name="page" byreference="false" type="int"/>
+    <parameter name="onPage" byreference="false" type="int" default="NULL"/>
+  </method>
+  <method name="getPageAmount" start="321" end="323" abstract="false" final="false" static="false" visibility="private">
+    <return type="int" nullable="false"/>
+  </method>
+  <method name="generatePages" start="325" end="342" abstract="false" final="false" static="false" visibility="private">
+    <return type="array" nullable="false"/>
+    <parameter name="page" byreference="false" type="int"/>
+    <parameter name="pageAmount" byreference="false" type="int"/>
+    <parameter name="paginationRange" byreference="false" type="int"/>
+  </method>
+  <interface full="Dariuszp\Paginator\Paginator\PaginatorInterface" namespace="Dariuszp\Paginator\Paginator" name="PaginatorInterface">
+    <method name="getData" start="20" end="20" abstract="false" final="false" static="false" visibility="public">
+      <return type="object" nullable="false">
+        <type full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface"/>
+      </return>
+    </method>
+  </interface>
+</class>

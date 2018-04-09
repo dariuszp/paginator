@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<source xmlns="http://xml.phpdox.net/src">
+  <dir name="/home/dariuszp/php/paginator/src">
+    <dir name="Paginator">
+      <file name="PaginatorInterface.php" size="338" time="2018-04-08T23:27:35+00:00" unixtime="1523230055" sha1="f06a1c171df934e7849217c5043fac44aefc872a" xml="tokens/Paginator/PaginatorInterface.php.xml"/>
+      <file name="Simple.php" size="7952" time="2018-04-08T23:43:49+00:00" unixtime="1523231029" sha1="d0c824705f01fd95261cad564136262c570f24d3" xml="tokens/Paginator/Simple.php.xml"/>
+    </dir>
+    <dir name="Data">
+      <file name="Base.php" size="1985" time="2018-04-08T22:53:23+00:00" unixtime="1523228003" sha1="bcfc5434fbcfce8c5afacc9f7efb47fa7246d60f" xml="tokens/Data/Base.php.xml"/>
+      <file name="PageInterface.php" size="568" time="2018-04-08T21:53:46+00:00" unixtime="1523224426" sha1="1aced8842d2da785e579b3ce67efda43f4bc7971" xml="tokens/Data/PageInterface.php.xml"/>
+      <file name="DataInterface.php" size="1091" time="2018-04-08T22:53:53+00:00" unixtime="1523228033" sha1="eb91156e0851a972a247ad861757791a0aba1b57" xml="tokens/Data/DataInterface.php.xml"/>
+      <file name="Page.php" size="1216" time="2018-04-08T21:53:46+00:00" unixtime="1523224426" sha1="5881a0ae605ad0f2fd181679826b58832530f32f" xml="tokens/Data/Page.php.xml"/>
+    </dir>
+    <dir name="Render">
+      <file name="RenderInterface.php" size="313" time="2018-04-08T23:26:31+00:00" unixtime="1523229991" sha1="1a2d2c84fb312529c1218dfc4f7653a0c0319331" xml="tokens/Render/RenderInterface.php.xml"/>
+      <file name="Spaghetti.php" size="2685" time="2018-04-08T23:46:22+00:00" unixtime="1523231182" sha1="1950ea8b74227657e389f787f755056adfd33b98" xml="tokens/Render/Spaghetti.php.xml"/>
+    </dir>
+  </dir>
+</source>

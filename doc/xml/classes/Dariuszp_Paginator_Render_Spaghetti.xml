@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Dariuszp\Paginator\Render\Spaghetti" namespace="Dariuszp\Paginator\Render" name="Spaghetti" abstract="false" final="false" start="13" end="101">
+  <file path="/home/dariuszp/php/paginator/src/Render" file="Spaghetti.php" realpath="/home/dariuszp/php/paginator/src/Render/Spaghetti.php" size="2685" time="2018-04-08T23:46:22+00:00" unixtime="1523231182" sha1="1950ea8b74227657e389f787f755056adfd33b98" relative="Render/Spaghetti.php"/>
+  <docblock>
+    <description compact="Class Spaghetti"/>
+    <package value="Dariuszp\Paginator\Render"/>
+  </docblock>
+  <implements full="Dariuszp\Paginator\Render\RenderInterface" namespace="Dariuszp\Paginator\Render" name="RenderInterface"/>
+  <constant type="string" name="PAGE_PATTERN" value="'&lt;li class=&quot;page-item %s&quot;&gt;&lt;a href=&quot;%s&quot; class=&quot;page-link&quot;&gt;%s&lt;/a&gt;&lt;/li&gt;'"/>
+  <member name="activeClass" default="'active'" type="string" visibility="private" static="false" line="17"/>
+  <member name="firstPageClass" default="'first-page'" type="string" visibility="private" static="false" line="19"/>
+  <member name="lastPageClass" default="'last-page'" type="string" visibility="private" static="false" line="21"/>
+  <member name="previousPageClass" default="'previous-page'" type="string" visibility="private" static="false" line="23"/>
+  <member name="nextPageClass" default="'next-page'" type="string" visibility="private" static="false" line="25"/>
+  <member name="firstPageLabel" default="'First'" type="string" visibility="private" static="false" line="27"/>
+  <member name="lastPageLabel" default="'Last'" type="string" visibility="private" static="false" line="29"/>
+  <member name="previousPageLabel" default="'Previous'" type="string" visibility="private" static="false" line="31"/>
+  <member name="nextPageLabel" default="'Next'" type="string" visibility="private" static="false" line="33"/>
+  <constructor name="__construct" start="39" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Simple constructor."/>
+      <param type="array" variable="$config"/>
+    </docblock>
+    <parameter name="config" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="render" start="52" end="65" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$data">
+        <type full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+    <parameter name="data" byreference="false" type="object">
+      <type full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface"/>
+    </parameter>
+  </method>
+  <method name="getPagesHtml" start="71" end="78" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param type="object" variable="$data">
+        <type full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+    <parameter name="data" byreference="false" type="object">
+      <type full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface"/>
+    </parameter>
+  </method>
+  <method name="getPageHtml" start="86" end="100" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param type="object" variable="$page">
+        <type full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+      </param>
+      <param type="string" variable="$class"/>
+      <param type="null" variable="$label"/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+    <parameter name="page" byreference="false" type="object" default="NULL">
+      <type full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+    </parameter>
+    <parameter name="class" byreference="false" type="string"/>
+    <parameter name="label" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <interface full="Dariuszp\Paginator\Render\RenderInterface" namespace="Dariuszp\Paginator\Render" name="RenderInterface">
+    <method name="render" start="18" end="18" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param type="object" variable="$data">
+          <type full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface"/>
+        </param>
+        <return type="string"/>
+      </docblock>
+      <return type="string" nullable="false"/>
+      <parameter name="data" byreference="false" type="object">
+        <type full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface"/>
+      </parameter>
+    </method>
+  </interface>
+</class>

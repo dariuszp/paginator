@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/dariuszp/php/paginator/src">
+  <namespace name="Dariuszp\Paginator\Paginator">
+    <interface name="PaginatorInterface" src="Paginator/PaginatorInterface.php" description="Class Simple - generates data object" xml="interfaces/Dariuszp_Paginator_Paginator_PaginatorInterface.xml"/>
+    <class name="Simple" src="Paginator/Simple.php" description="Class Simple - generates data object" xml="classes/Dariuszp_Paginator_Paginator_Simple.xml"/>
+  </namespace>
+  <namespace name="Dariuszp\Paginator\Data">
+    <class name="Base" src="Data/Base.php" xml="classes/Dariuszp_Paginator_Data_Base.xml"/>
+    <interface name="PageInterface" src="Data/PageInterface.php" xml="interfaces/Dariuszp_Paginator_Data_PageInterface.xml"/>
+    <interface name="DataInterface" src="Data/DataInterface.php" xml="interfaces/Dariuszp_Paginator_Data_DataInterface.xml"/>
+    <class name="Page" src="Data/Page.php" xml="classes/Dariuszp_Paginator_Data_Page.xml"/>
+  </namespace>
+  <namespace name="Dariuszp\Paginator\Render">
+    <interface name="RenderInterface" src="Render/RenderInterface.php" description="Class Spaghetti" xml="interfaces/Dariuszp_Paginator_Render_RenderInterface.xml"/>
+    <class name="Spaghetti" src="Render/Spaghetti.php" description="Class Spaghetti" xml="classes/Dariuszp_Paginator_Render_Spaghetti.xml"/>
+  </namespace>
+</index>

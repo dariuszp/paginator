@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Dariuszp\Paginator\Paginator\Simple</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Dariuszp_Paginator_Paginator">Dariuszp\Paginator\Paginator</a>
+          </li>
+          <li class="separator">Simple</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Paginator/Simple.php.xhtml#line14">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Dariuszp\Paginator\Paginator\</small>Simple</h1>
+        <h4>Class Simple - generates data object</h4>
+        <p/>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Simple
+                implements
+                <a title="Dariuszp\Paginator\Paginator\PaginatorInterface" href="../interfaces/Dariuszp_Paginator_Paginator_PaginatorInterface.xhtml">PaginatorInterface</a>
+            {<br/><ul class="none"><li>// constants</li><li>const PAGE_PARAMETER = '{page}';</li><li>const ON_PAGE_PARAMETER = '{onPage}';</li></ul><ul class="none"><li>// members</li><li>private  <a href="#members">$pattern</a>;
+                    </li><li>private integer <a href="#members">$totalAmount</a> =
+                        0;
+                    </li><li>private integer <a href="#members">$paginationRange</a> =
+                        2;
+                    </li><li>private integer <a href="#members">$page</a> =
+                        1;
+                    </li><li>private integer <a href="#members">$onPage</a> =
+                        10;
+                    </li><li>private <span title="Dariuszp\Paginator\Paginator\bool">bool</span> <a href="#members">$firstPage</a> =
+                        true;
+                    </li><li>private <span title="Dariuszp\Paginator\Paginator\bool">bool</span> <a href="#members">$lastPage</a> =
+                        true;
+                    </li><li>private <span title="Dariuszp\Paginator\Paginator\bool">bool</span> <a href="#members">$previousPage</a> =
+                        true;
+                    </li><li>private <span title="Dariuszp\Paginator\Paginator\bool">bool</span> <a href="#members">$nextPage</a> =
+                        true;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/__construct.xhtml">__construct</a>()
+                    </li><li>public string <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getPattern.xhtml">getPattern</a>()
+                    </li><li>public void <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setPattern.xhtml">setPattern</a>()
+                    </li><li>public int <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getTotalAmount.xhtml">getTotalAmount</a>()
+                    </li><li>public void <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setTotalAmount.xhtml">setTotalAmount</a>()
+                    </li><li>public int <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getPaginationRange.xhtml">getPaginationRange</a>()
+                    </li><li>public void <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setPaginationRange.xhtml">setPaginationRange</a>()
+                    </li><li>public int <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getPage.xhtml">getPage</a>()
+                    </li><li>public void <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setPage.xhtml">setPage</a>()
+                    </li><li>public int <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getOnPage.xhtml">getOnPage</a>()
+                    </li><li>public void <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setOnPage.xhtml">setOnPage</a>()
+                    </li><li>public bool <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/isFirstPage.xhtml">isFirstPage</a>()
+                    </li><li>public void <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setFirstPage.xhtml">setFirstPage</a>()
+                    </li><li>public bool <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/isLastPage.xhtml">isLastPage</a>()
+                    </li><li>public void <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setLastPage.xhtml">setLastPage</a>()
+                    </li><li>public bool <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/isPreviousPage.xhtml">isPreviousPage</a>()
+                    </li><li>public void <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setPreviousPage.xhtml">setPreviousPage</a>()
+                    </li><li>public bool <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/isNextPage.xhtml">isNextPage</a>()
+                    </li><li>public void <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setNextPage.xhtml">setNextPage</a>()
+                    </li><li>public <span title="DataInterface">DataInterface</span> <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getData.xhtml">getData</a>()
+                    </li><li>private <span title="PageInterface">PageInterface</span> <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/createPage.xhtml">createPage</a>()
+                    </li><li>private string <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/createUrl.xhtml">createUrl</a>()
+                    </li><li>private int <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getPageAmount.xhtml">getPageAmount</a>()
+                    </li><li>private array <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/generatePages.xhtml">generatePages</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="Dariuszp\Paginator\Paginator\PaginatorInterface" href="../interfaces/Dariuszp_Paginator_Paginator_PaginatorInterface.xhtml">Dariuszp\Paginator\Paginator\PaginatorInterface</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="PAGE_PARAMETER">PAGE_PARAMETER</td>
+              <td>'{page}'</td>
+            </tr>
+            <tr>
+              <td id="ON_PAGE_PARAMETER">ON_PAGE_PARAMETER</td>
+              <td>'{onPage}'</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="firstPage"><strong>$firstPage</strong>
+                —
+                <a title="Dariuszp\Paginator\Paginator\bool" href="../classes/Dariuszp_Paginator_Paginator_bool.xhtml">Dariuszp\Paginator\Paginator\bool</a><br/><span class="indent">Show first page link</span></li>
+            <li id="lastPage"><strong>$lastPage</strong>
+                —
+                <a title="Dariuszp\Paginator\Paginator\bool" href="../classes/Dariuszp_Paginator_Paginator_bool.xhtml">Dariuszp\Paginator\Paginator\bool</a><br/><span class="indent">Show last page link</span></li>
+            <li id="nextPage"><strong>$nextPage</strong>
+                —
+                <a title="Dariuszp\Paginator\Paginator\bool" href="../classes/Dariuszp_Paginator_Paginator_bool.xhtml">Dariuszp\Paginator\Paginator\bool</a><br/><span class="indent">Show next page link</span></li>
+            <li id="onPage"><strong>$onPage</strong>
+                —
+                int<br/><span class="indent">Amount of items on page</span></li>
+            <li id="page"><strong>$page</strong>
+                —
+                int<br/><span class="indent">Current page number, cannot go below 1</span></li>
+            <li id="paginationRange"><strong>$paginationRange</strong>
+                —
+                int<br/><span class="indent">Amount of links on the left and on the right of the current page</span></li>
+            <li id="pattern"><strong>$pattern</strong>
+                —
+                string<br/><span class="indent">Url pattern for pagination, require {page} and optional {onPage} parameters</span></li>
+            <li id="previousPage"><strong>$previousPage</strong>
+                —
+                <a title="Dariuszp\Paginator\Paginator\bool" href="../classes/Dariuszp_Paginator_Paginator_bool.xhtml">Dariuszp\Paginator\Paginator\bool</a><br/><span class="indent">Show previous page link</span></li>
+            <li id="totalAmount"><strong>$totalAmount</strong>
+                —
+                int<br/><span class="indent">Total amount of items to paginate</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="createPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/createPage.xhtml">createPage()</a>
+            </li>
+            <li id="createUrl">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/createUrl.xhtml">createUrl()</a>
+            </li>
+            <li id="generatePages">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/generatePages.xhtml">generatePages()</a>
+            </li>
+            <li id="getPageAmount">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getPageAmount.xhtml">getPageAmount()</a>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/__construct.xhtml">__construct()</a>
+                — Simple constructor.</li>
+            <li id="getData">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getData.xhtml">getData()</a>
+            </li>
+            <li id="getOnPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getOnPage.xhtml">getOnPage()</a>
+            </li>
+            <li id="getPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getPage.xhtml">getPage()</a>
+            </li>
+            <li id="getPaginationRange">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getPaginationRange.xhtml">getPaginationRange()</a>
+            </li>
+            <li id="getPattern">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getPattern.xhtml">getPattern()</a>
+            </li>
+            <li id="getTotalAmount">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/getTotalAmount.xhtml">getTotalAmount()</a>
+            </li>
+            <li id="isFirstPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/isFirstPage.xhtml">isFirstPage()</a>
+            </li>
+            <li id="isLastPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/isLastPage.xhtml">isLastPage()</a>
+            </li>
+            <li id="isNextPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/isNextPage.xhtml">isNextPage()</a>
+            </li>
+            <li id="isPreviousPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/isPreviousPage.xhtml">isPreviousPage()</a>
+            </li>
+            <li id="setFirstPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setFirstPage.xhtml">setFirstPage()</a>
+            </li>
+            <li id="setLastPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setLastPage.xhtml">setLastPage()</a>
+            </li>
+            <li id="setNextPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setNextPage.xhtml">setNextPage()</a>
+            </li>
+            <li id="setOnPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setOnPage.xhtml">setOnPage()</a>
+            </li>
+            <li id="setPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setPage.xhtml">setPage()</a>
+            </li>
+            <li id="setPaginationRange">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setPaginationRange.xhtml">setPaginationRange()</a>
+            </li>
+            <li id="setPattern">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setPattern.xhtml">setPattern()</a>
+            </li>
+            <li id="setPreviousPage">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setPreviousPage.xhtml">setPreviousPage()</a>
+            </li>
+            <li id="setTotalAmount">
+              <a title="Dariuszp\Paginator\Paginator\Simple" href="../classes/Dariuszp_Paginator_Paginator_Simple/setTotalAmount.xhtml">setTotalAmount()</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.0 - Copyright (C) 2010 - 2018 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

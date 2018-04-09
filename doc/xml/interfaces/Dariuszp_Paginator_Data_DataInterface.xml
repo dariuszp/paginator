@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface" abstract="false" final="false" start="6" end="57">
+  <file path="/home/dariuszp/php/paginator/src/Data" file="DataInterface.php" realpath="/home/dariuszp/php/paginator/src/Data/DataInterface.php" size="1091" time="2018-04-08T22:53:53+00:00" unixtime="1523228033" sha1="eb91156e0851a972a247ad861757791a0aba1b57" relative="Data/DataInterface.php"/>
+  <method name="getPages" start="11" end="11" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array" of="object">
+        <type full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+      </return>
+    </docblock>
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="setPages" start="16" end="16" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="array" variable="$pages" of="object">
+        <type full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+      </param>
+    </docblock>
+    <parameter name="pages" byreference="false" type="array"/>
+  </method>
+  <method name="getFirstPage" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Dariuszp\Paginator\Data\PageInterface|null" namespace="Dariuszp\Paginator\Data" name="PageInterface|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setFirstPage" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$firstPage">
+        <type full="Dariuszp\Paginator\Data\PageInterface|null" namespace="Dariuszp\Paginator\Data" name="PageInterface|null"/>
+      </param>
+    </docblock>
+    <parameter name="firstPage" byreference="false" type="object">
+      <type full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+    </parameter>
+  </method>
+  <method name="getLastPage" start="31" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Dariuszp\Paginator\Data\PageInterface|null" namespace="Dariuszp\Paginator\Data" name="PageInterface|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLastPage" start="36" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$lastPage">
+        <type full="Dariuszp\Paginator\Data\PageInterface|null" namespace="Dariuszp\Paginator\Data" name="PageInterface|null"/>
+      </param>
+    </docblock>
+    <parameter name="lastPage" byreference="false" type="object">
+      <type full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+    </parameter>
+  </method>
+  <method name="getPreviousPage" start="41" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Dariuszp\Paginator\Data\PageInterface|null" namespace="Dariuszp\Paginator\Data" name="PageInterface|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPreviousPage" start="46" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$previousPage">
+        <type full="Dariuszp\Paginator\Data\PageInterface|null" namespace="Dariuszp\Paginator\Data" name="PageInterface|null"/>
+      </param>
+    </docblock>
+    <parameter name="previousPage" byreference="false" type="object">
+      <type full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+    </parameter>
+  </method>
+  <method name="getNextPage" start="51" end="51" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Dariuszp\Paginator\Data\PageInterface|null" namespace="Dariuszp\Paginator\Data" name="PageInterface|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setNextPage" start="56" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$nextPage">
+        <type full="Dariuszp\Paginator\Data\PageInterface|null" namespace="Dariuszp\Paginator\Data" name="PageInterface|null"/>
+      </param>
+    </docblock>
+    <parameter name="nextPage" byreference="false" type="object">
+      <type full="Dariuszp\Paginator\Data\PageInterface" namespace="Dariuszp\Paginator\Data" name="PageInterface"/>
+    </parameter>
+  </method>
+  <implementors>
+    <class full="Dariuszp\Paginator\Data\Base" namespace="Dariuszp\Paginator\Data" name="Base"/>
+  </implementors>
+</interface>
