@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Dariuszp\Paginator\Render\Spaghetti</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Dariuszp_Paginator_Render">Dariuszp\Paginator\Render</a>
+          </li>
+          <li class="separator">Spaghetti</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Render/Spaghetti.php.xhtml#line13">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Dariuszp\Paginator\Render\</small>Spaghetti</h1>
+        <h4>Class Spaghetti</h4>
+        <p/>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Spaghetti
+                implements
+                <a title="Dariuszp\Paginator\Render\RenderInterface" href="../interfaces/Dariuszp_Paginator_Render_RenderInterface.xhtml">RenderInterface</a>
+            {<br/><ul class="none"><li>// constants</li><li>const PAGE_PATTERN = '&lt;li class="page-item %s"&gt;&lt;a href="%s" class="page-link"&gt;%s&lt;/a&gt;&lt;/li&gt;';</li></ul><ul class="none"><li>// members</li><li>private string <a href="#members">$activeClass</a> =
+                        'active';
+                    </li><li>private string <a href="#members">$firstPageClass</a> =
+                        'first-page';
+                    </li><li>private string <a href="#members">$lastPageClass</a> =
+                        'last-page';
+                    </li><li>private string <a href="#members">$previousPageClass</a> =
+                        'previous-page';
+                    </li><li>private string <a href="#members">$nextPageClass</a> =
+                        'next-page';
+                    </li><li>private string <a href="#members">$firstPageLabel</a> =
+                        'First';
+                    </li><li>private string <a href="#members">$lastPageLabel</a> =
+                        'Last';
+                    </li><li>private string <a href="#members">$previousPageLabel</a> =
+                        'Previous';
+                    </li><li>private string <a href="#members">$nextPageLabel</a> =
+                        'Next';
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Dariuszp\Paginator\Render\Spaghetti" href="../classes/Dariuszp_Paginator_Render_Spaghetti/__construct.xhtml">__construct</a>()
+                    </li><li>public string <a title="Dariuszp\Paginator\Render\Spaghetti" href="../classes/Dariuszp_Paginator_Render_Spaghetti/render.xhtml">render</a>()
+                    </li><li>private string <a title="Dariuszp\Paginator\Render\Spaghetti" href="../classes/Dariuszp_Paginator_Render_Spaghetti/getPagesHtml.xhtml">getPagesHtml</a>()
+                    </li><li>private string <a title="Dariuszp\Paginator\Render\Spaghetti" href="../classes/Dariuszp_Paginator_Render_Spaghetti/getPageHtml.xhtml">getPageHtml</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="Dariuszp\Paginator\Render\RenderInterface" href="../interfaces/Dariuszp_Paginator_Render_RenderInterface.xhtml">Dariuszp\Paginator\Render\RenderInterface</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="PAGE_PATTERN">PAGE_PATTERN</td>
+              <td>'&lt;li class="page-item %s"&gt;&lt;a href="%s" class="page-link"&gt;%s&lt;/a&gt;&lt;/li&gt;'</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="activeClass">
+              <strong>$activeClass</strong>
+            </li>
+            <li id="firstPageClass">
+              <strong>$firstPageClass</strong>
+            </li>
+            <li id="firstPageLabel">
+              <strong>$firstPageLabel</strong>
+            </li>
+            <li id="lastPageClass">
+              <strong>$lastPageClass</strong>
+            </li>
+            <li id="lastPageLabel">
+              <strong>$lastPageLabel</strong>
+            </li>
+            <li id="nextPageClass">
+              <strong>$nextPageClass</strong>
+            </li>
+            <li id="nextPageLabel">
+              <strong>$nextPageLabel</strong>
+            </li>
+            <li id="previousPageClass">
+              <strong>$previousPageClass</strong>
+            </li>
+            <li id="previousPageLabel">
+              <strong>$previousPageLabel</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="getPageHtml">
+              <a title="Dariuszp\Paginator\Render\Spaghetti" href="../classes/Dariuszp_Paginator_Render_Spaghetti/getPageHtml.xhtml">getPageHtml()</a>
+            </li>
+            <li id="getPagesHtml">
+              <a title="Dariuszp\Paginator\Render\Spaghetti" href="../classes/Dariuszp_Paginator_Render_Spaghetti/getPagesHtml.xhtml">getPagesHtml()</a>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="Dariuszp\Paginator\Render\Spaghetti" href="../classes/Dariuszp_Paginator_Render_Spaghetti/__construct.xhtml">__construct()</a>
+                — Simple constructor.</li>
+            <li id="render">
+              <a title="Dariuszp\Paginator\Render\Spaghetti" href="../classes/Dariuszp_Paginator_Render_Spaghetti/render.xhtml">render()</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.0 - Copyright (C) 2010 - 2018 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

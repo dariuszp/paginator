@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Dariuszp\Paginator\Render\RenderInterface" namespace="Dariuszp\Paginator\Render" name="RenderInterface" abstract="false" final="false" start="12" end="19">
+  <file path="/home/dariuszp/php/paginator/src/Render" file="RenderInterface.php" realpath="/home/dariuszp/php/paginator/src/Render/RenderInterface.php" size="313" time="2018-04-08T23:26:31+00:00" unixtime="1523229991" sha1="1a2d2c84fb312529c1218dfc4f7653a0c0319331" relative="Render/RenderInterface.php"/>
+  <docblock>
+    <description compact="Class Spaghetti"/>
+    <package value="Dariuszp\Paginator\Render"/>
+  </docblock>
+  <method name="render" start="18" end="18" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$data">
+        <type full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+    <parameter name="data" byreference="false" type="object">
+      <type full="Dariuszp\Paginator\Data\DataInterface" namespace="Dariuszp\Paginator\Data" name="DataInterface"/>
+    </parameter>
+  </method>
+  <implementors>
+    <class full="Dariuszp\Paginator\Render\Spaghetti" namespace="Dariuszp\Paginator\Render" name="Spaghetti"/>
+  </implementors>
+</interface>
